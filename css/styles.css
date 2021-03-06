@@ -1,0 +1,169 @@
+/**
+ * base styles and typography
+ * ---------------
+ */
+:root {
+    --orange-050: #ffe8d9;
+    --orange-100: #ffd0b5;
+    --orange-200: #ffb088;
+    --orange-300: #ff9466;
+    --orange-400: #f9703e;
+    --orange-500: #f35627;
+    --orange-600: #de3a11;
+    --orange-700: #c52707;
+    --orange-800: #ad1d07;
+    --orange-900: #841003;
+
+    --grey-050: #f5f7fa;
+    --grey-100: #e4e7eb;
+    --grey-200: #cbd2d9;
+    --grey-300: #9aa5b1;
+    --grey-400: #7b8794;
+    --grey-500: #616e7c;
+    --grey-600: #52606d;
+    --grey-700: #3e4c59;
+    --grey-800: #323f4b;
+    --grey-900: #1f2933;
+}
+
+/*******************
+ Base styles
+ *******************/
+html {
+    font-size: 150%;
+    font-weight: 300;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+}
+
+/*******************
+ Calculator
+ *******************/
+.calculator {
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+
+    width: 16.25rem;
+    margin: auto;
+}
+
+.calculator__display {
+    background-color: var(--grey-900);
+    color: var(--grey-050);
+
+    height: 7em;
+    overflow-y: scroll;
+
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+
+    word-break: break-all;
+}
+
+.calculator__keys button {
+    font-size: 0.7rem;
+}
+
+.calculator__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "clear opening-parenthese closing-parenthese pi"
+        "seven eight nine divide"
+        "four five six times"
+        "one two three minus"
+        "zero decimal equal plus";
+}
+
+.calculator__keys button {
+    border: 0;
+}
+
+.calculator__keys button:hover {
+    background-color: var(--grey-800);
+    color: white;
+}
+
+.calculator__keys button:focus {
+    outline: solid 2px var(--grey-900);
+    outline-offset: -2px;
+}
+
+[data-type="number"],
+[data-type="equal"] {
+    background-color: var(--grey-050);
+}
+
+[data-type="operator"],
+[data-type="function"],
+[data-type="clear"] {
+    background-color: var(--grey-100);
+}
+
+.plus {
+    grid-area: plus;
+}
+.minus {
+    grid-area: minus;
+}
+.times {
+    grid-area: times;
+}
+.divide {
+    grid-area: divide;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+.zero {
+    grid-area: zero;
+}
+.decimal {
+    grid-area: decimal;
+}
+.clear {
+    grid-area: clear;
+}
+.equal {
+    grid-area: equal;
+}
+.opening-parenthese {
+    grid-area: opening-parenthese;
+}
+.closing-parenthese {
+    grid-area: closing-parenthese;
+}
+.pi {
+    grid-area: pi;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Calculator</title>
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
+            rel="stylesheet"
+        />
+        <link href="css/normalize.css" rel="stylesheet" />
+        <link href="css/reset.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <p class="calculator__display">0</p>
+                <div class="calculator__keys">
+                    <button data-value="1" class="one" data-type="number">
+                        1
+                    </button>
+                    <button data-value="2" class="two" data-type="number">
+                        2
+                    </button>
+                    <button data-value="3" class="three" data-type="number">
+                        3
+                    </button>
+                    <button data-value="4" class="four" data-type="number">
+                        4
+                    </button>
+                    <button data-value="5" class="five" data-type="number">
+                        5
+                    </button>
+                    <button data-value="6" class="six" data-type="number">
+                        6
+                    </button>
+                    <button data-value="7" class="seven" data-type="number">
+                        7
+                    </button>
+                    <button data-value="8" class="eight" data-type="number">
+                        8
+                    </button>
+                    <button data-value="9" class="nine" data-type="number">
+                        9
+                    </button>
+                    <button data-value="0" class="zero" data-type="number">
+                        0
+                    </button>
+                    <button data-value="." class="decimal" data-type="number">
+                        .
+                    </button>
+                    <button data-value="+" class="plus" data-type="operator">
+                        +
+                    </button>
+                    <button data-value="-" class="minus" data-type="operator">
+                        -
+                    </button>
+                    <button data-value="×" class="times" data-type="operator">
+                        &times;
+                    </button>
+                    <button data-value="÷" class="divide" data-type="operator">
+                        ÷
+                    </button>
+                    <button
+                        data-value="("
+                        class="opening-parenthese"
+                        data-type="operator"
+                    >
+                        (
+                    </button>
+                    <button
+                        data-value=")"
+                        class="closing-parenthese"
+                        data-type="operator"
+                    >
+                        )
+                    </button>
+
+                    <button data-value="π" class="pi" data-type="function">
+                        π
+                    </button>
+                    <button data-value="=" class="equal" data-type="equal">
+                        =
+                    </button>
+                    <button data-value="C" class="clear" data-type="clear">
+                        C
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="./js/main.js"></script>
+    </body>
+</html>
